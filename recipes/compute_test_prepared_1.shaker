@@ -88,7 +88,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "GeoPointCreator",
@@ -96,6 +96,20 @@
         "out_column": "geopoint_dropoff",
         "lat_column": "dropoff_latitude",
         "lon_column": "dropoff_longitude"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoDistanceProcessor",
+      "params": {
+        "output": "distance",
+        "input2": "geopoint_dropoff",
+        "outputUnit": "KILOMETERS",
+        "input1": "geopoint_pickup",
+        "compareTo": "COLUMN"
       },
       "alwaysShowComment": false
     }
