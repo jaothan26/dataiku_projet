@@ -78,7 +78,7 @@
     "preprocessingFitSampleSeed": 1337,
     "per_feature": {
       "cluster_labels": {
-        "category_handling": "DUMMIFY",
+        "category_handling": "FLAG_PRESENCE",
         "missing_handling": "NONE",
         "missing_impute_with": "MODE",
         "dummy_clip": "MAX_NB_CATEGORIES",
@@ -91,7 +91,7 @@
         "role": "INPUT",
         "type": "CATEGORY",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
@@ -232,7 +232,7 @@
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
         "dummy_drop": "AUTO",
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -295,7 +295,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -570,7 +570,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "random_forest_classification": {
       "n_estimators": {
@@ -1101,7 +1101,7 @@
           "scaling": "LOGARITHMIC"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "lasso_regression": {
       "alphaMode": "AUTO_CV",
@@ -2011,12 +2011,12 @@
         "name": "Custom algo linsvc_h",
         "params": {
           "tol": [
-            1.0E-4
+            0.0001
           ]
         },
         "supportsSampleWeights": false,
         "acceptsSparseMatrix": false,
-        "enabled": false
+        "enabled": true
       }
     },
     "keras": {
