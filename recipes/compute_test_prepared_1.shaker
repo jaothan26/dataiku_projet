@@ -43,12 +43,23 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "(dropoff_latitude - pickup_latitude).abs()",
+        "column": "abs_diff_latitude"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(abs_diff_latitude\u003d\u003d0,0.014715,abs_diff_latitude)",
         "column": "abs_diff_latitude"
       },
       "alwaysShowComment": false
