@@ -100,7 +100,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "GeoDistanceProcessor",
@@ -110,6 +110,17 @@
         "outputUnit": "KILOMETERS",
         "input1": "geopoint_pickup",
         "compareTo": "COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(distance\u003d\u003d0,2.22,distance)",
+        "column": "distance"
       },
       "alwaysShowComment": false
     }
