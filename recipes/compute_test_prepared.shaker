@@ -128,43 +128,10 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
-      "type": "FindReplace",
-      "params": {
-        "output": "",
-        "mapping": [],
-        "normalization": "EXACT",
-        "columns": [
-          "distance"
-        ],
-        "appliesTo": "SINGLE_COLUMN",
-        "stopAfterFirstMatch": false,
-        "matching": "FULL_STRING"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "if(distance\u003d\u003d0.0,2.2200,distance)",
         "column": "distance"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnsSelector",
-      "params": {
-        "columns": [
-          "abs_diff_longitude",
-          "abs_diff_latitude"
-        ],
-        "keep": false,
-        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     }
