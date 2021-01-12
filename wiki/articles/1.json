@@ -1,0 +1,24 @@
+{
+  "name": "article",
+  "layout": "WIKI_ARTICLE",
+  "attachments": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "d44479"
+    },
+    "lastModifiedOn": 1610472112001
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "d44479"
+    },
+    "lastModifiedOn": 1610472112001
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
