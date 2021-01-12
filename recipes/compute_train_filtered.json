@@ -83,11 +83,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "d44479"
     },
-    "lastModifiedOn": 1610445817377
+    "lastModifiedOn": 1610472027653
   },
   "creationTag": {
     "versionNumber": 0,
@@ -96,7 +96,9 @@
     },
     "lastModifiedOn": 1610445814511
   },
-  "tags": [],
+  "tags": [
+    "prepare"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": []
