@@ -74,6 +74,39 @@
         "column": "abs_diff_longitude"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "pickup_datetime_format",
+        "formats": [
+          "yyyy-MM-dd HH:mm:ss"
+        ],
+        "columns": [
+          "pickup_datetime"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outMonthColumn": "month",
+        "outYearColumn": "year",
+        "column": "pickup_datetime_format",
+        "outDayOfWeekColumn": "weekday",
+        "timezone_id": "UTC"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
