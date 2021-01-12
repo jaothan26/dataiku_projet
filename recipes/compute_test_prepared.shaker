@@ -111,7 +111,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "DateComponentsExtractor",
@@ -121,6 +121,22 @@
         "column": "pickup_datetime_format",
         "outDayOfWeekColumn": "weekday",
         "timezone_id": "UTC"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnNumericalRange",
+      "params": {
+        "min": 1.0E-9,
+        "booleanMode": "AND",
+        "columns": [
+          "distance"
+        ],
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
@@ -146,6 +162,7 @@
     "dropoff_longitude": 169,
     "geopoint_pickup": 300,
     "month": 100,
+    "abs_diff_lattitude": 150,
     "pickup_latitude": 155,
     "abs_diff_longitude": 176,
     "geopoint_dropoff": 300,
