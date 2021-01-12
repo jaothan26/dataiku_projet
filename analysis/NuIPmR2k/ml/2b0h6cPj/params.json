@@ -164,14 +164,14 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
+        "rescaling": "NONE",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
@@ -185,14 +185,14 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
+        "rescaling": "NONE",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
@@ -249,14 +249,14 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
+        "rescaling": "NONE",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
@@ -356,14 +356,14 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
+        "rescaling": "NONE",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
@@ -2054,7 +2054,7 @@
       "nJobs": 4
     },
     "metrics": {
-      "evaluationMetric": "R2",
+      "evaluationMetric": "RMSE",
       "customEvaluationMetricGIB": true,
       "customEvaluationMetricNeedsProba": false,
       "costMatrixWeights": {
