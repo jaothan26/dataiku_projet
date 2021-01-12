@@ -41,6 +41,17 @@
         "column": "abs_diff_longitude"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(dropoff_latitude - pickup_latitude).abs()",
+        "column": "abs_diff_latitude"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
