@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "d44479"
     },
-    "lastModifiedOn": 1610447453755
+    "lastModifiedOn": 1610447547108
   },
   "creationTag": {
     "versionNumber": 0,
@@ -68,6 +68,22 @@
       {
         "name": "pickup_datetime",
         "type": "string"
+      },
+      {
+        "name": "pickup_datetime_format",
+        "type": "date"
+      },
+      {
+        "name": "year",
+        "type": "bigint"
+      },
+      {
+        "name": "month",
+        "type": "bigint"
+      },
+      {
+        "name": "weekday",
+        "type": "bigint"
       },
       {
         "name": "pickup_longitude",
