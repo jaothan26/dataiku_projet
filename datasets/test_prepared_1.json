@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "d44479"
     },
-    "lastModifiedOn": 1610464178876
+    "lastModifiedOn": 1610464232334
   },
   "creationTag": {
     "versionNumber": 0,
@@ -83,6 +83,10 @@
       },
       {
         "name": "dropoff_latitude",
+        "type": "double"
+      },
+      {
+        "name": "abs_diff_latitude",
         "type": "double"
       },
       {
