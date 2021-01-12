@@ -570,7 +570,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "random_forest_classification": {
       "n_estimators": {
@@ -1101,7 +1101,7 @@
           "scaling": "LOGARITHMIC"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "lasso_regression": {
       "alphaMode": "AUTO_CV",
@@ -2016,7 +2016,7 @@
         },
         "supportsSampleWeights": false,
         "acceptsSparseMatrix": false,
-        "enabled": false
+        "enabled": true
       }
     },
     "keras": {
