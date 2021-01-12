@@ -83,6 +83,46 @@
         "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "format(\"%.8f\", abs_diff_longitude)",
+        "column": "abs_diff_longitude_format"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "abs_diff_longitude"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "abs_diff_longitude_format",
+            "to": "abs_diff_longitude"
+          }
+        ]
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -97,6 +137,8 @@
     "pickup_longitude": 162,
     "distance": 100,
     "abs_diff_latitude": 169,
+    "newcolumn_expression": 165,
+    "abs_diff_longitude_format": 203,
     "pickup_datetime": 176,
     "passenger_count": 128,
     "dropoff_latitude": 135,
