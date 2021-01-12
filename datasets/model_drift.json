@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "d44479"
     },
-    "lastModifiedOn": 1610466481254
+    "lastModifiedOn": 1610466509250
   },
   "creationTag": {
     "versionNumber": 0,
@@ -95,6 +95,22 @@
       },
       {
         "name": "customScore",
+        "type": "double"
+      },
+      {
+        "name": "rmse_first",
+        "type": "double"
+      },
+      {
+        "name": "rmse_last",
+        "type": "double"
+      },
+      {
+        "name": "w2_rmse_first",
+        "type": "double"
+      },
+      {
+        "name": "w2_rmse_last",
         "type": "double"
       }
     ],
