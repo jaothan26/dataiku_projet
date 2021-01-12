@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "d44479"
     },
-    "lastModifiedOn": 1610447547108
+    "lastModifiedOn": 1610472069126
   },
   "creationTag": {
     "versionNumber": 0,
@@ -41,7 +41,9 @@
     },
     "lastModifiedOn": 1610447453755
   },
-  "tags": [],
+  "tags": [
+    "prepare"
+  ],
   "params": {
     "connection": "LAB_DATAPREP",
     "notReadyIfEmpty": false,
