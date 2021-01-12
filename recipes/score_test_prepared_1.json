@@ -1,0 +1,62 @@
+{
+  "type": "prediction_scoring",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "inputs": {
+    "model": {
+      "items": [
+        {
+          "ref": "b2Oyfgc0",
+          "deps": []
+        }
+      ]
+    },
+    "main": {
+      "items": [
+        {
+          "ref": "test_prepared_1",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "test_prepared_1_scored",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "d44479"
+    },
+    "lastModifiedOn": 1610465200959
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "d44479"
+    },
+    "lastModifiedOn": 1610465200959
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
