@@ -26,8 +26,42 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "prediction",
+            "to": "fare_amount"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "key",
+          "fare_amount"
+        ],
+        "keep": true,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +69,23 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "pickup_longitude": 162,
+    "fare_amount": 127,
+    "year": 100,
+    "weekday": 100,
+    "abs_diff_latitude": 169,
+    "pickup_datetime": 176,
+    "passenger_count": 128,
+    "dropoff_latitude": 135,
+    "pickup_datetime_format": 204,
+    "dropoff_longitude": 169,
+    "month": 100,
+    "pickup_latitude": 155,
+    "prediction": 120,
+    "abs_diff_longitude": 176,
+    "key": 218
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
