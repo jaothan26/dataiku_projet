@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "d44479"
     },
-    "lastModifiedOn": 1610447339107
+    "lastModifiedOn": 1610447417090
   },
   "creationTag": {
     "versionNumber": 0,
@@ -96,6 +96,18 @@
       {
         "name": "passenger_count",
         "type": "bigint"
+      },
+      {
+        "name": "geopoint_pickup",
+        "type": "string"
+      },
+      {
+        "name": "geopoint_dropoff",
+        "type": "string"
+      },
+      {
+        "name": "distance",
+        "type": "double"
       }
     ],
     "userModified": true
