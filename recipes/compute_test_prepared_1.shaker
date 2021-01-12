@@ -65,13 +65,37 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "if(abs_diff_longitude\u003d\u003d0,0.013123,abs_diff_longitude)",
         "column": "abs_diff_longitude"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoPointCreator",
+      "params": {
+        "out_column": "geopoint_pickup",
+        "lat_column": "pickup_latitude",
+        "lon_column": "pickup_longitude"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoPointCreator",
+      "params": {
+        "out_column": "geopoint_dropoff",
+        "lat_column": "dropoff_latitude",
+        "lon_column": "dropoff_longitude"
       },
       "alwaysShowComment": false
     }
