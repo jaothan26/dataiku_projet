@@ -1,4 +1,5 @@
 {
+  "name": "NY_TAXI",
   "endpoints": [
     {
       "modelRef": "b2Oyfgc0",
@@ -11,8 +12,66 @@
         "shapleyBackgroundSize": 100,
         "subChunkSize": 5000
       },
-      "testQueries": [],
-      "enrichMapping": [],
+      "testQueries": [
+        {
+          "name": "train_filtered_K_means #1",
+          "q": {
+            "features": {
+              "key": "2014-02-06 00:48:00.00000041",
+              "fare_amount": 10.5,
+              "pickup_datetime": "2014-02-06 00:48:00 UTC",
+              "pickup_datetime_format": "2014-02-06T00:48:00.000Z",
+              "year": 2014,
+              "month": 2,
+              "weekday": 4,
+              "pickup_longitude": -73.992727,
+              "pickup_latitude": 40.726817,
+              "dropoff_longitude": -73.985517,
+              "abs_diff_longitude": 0.007210000000000605,
+              "dropoff_latitude": 40.69775,
+              "abs_diff_latitude": 0.02906699999999773,
+              "passenger_count": 1,
+              "geopoint_pickup": "POINT(-73.992727 40.726817)",
+              "geopoint_dropoff": "POINT(-73.985517 40.69775)",
+              "distance": 3.29,
+              "cluster_labels": "cluster_2"
+            }
+          }
+        }
+      ],
+      "enrichMapping": [
+        {
+          "datasetRef": "train_filtered_K_means",
+          "packagingType": "REFERENCED",
+          "on": [
+            {
+              "resourceLookupCol": "fare_amount"
+            }
+          ],
+          "missingLookupKeyBehavior": "IGNORE",
+          "notFoundBehavior": "IGNORE",
+          "multiMatchBehavior": "KEEP_FIRST",
+          "columnsMapping": {
+            "key": "key",
+            "pickup_datetime": "pickup_datetime",
+            "pickup_datetime_format": "pickup_datetime_format",
+            "year": "year",
+            "month": "month",
+            "weekday": "weekday",
+            "pickup_longitude": "pickup_longitude",
+            "pickup_latitude": "pickup_latitude",
+            "dropoff_longitude": "dropoff_longitude",
+            "abs_diff_longitude": "abs_diff_longitude",
+            "dropoff_latitude": "dropoff_latitude",
+            "abs_diff_latitude": "abs_diff_latitude",
+            "passenger_count": "passenger_count",
+            "geopoint_pickup": "geopoint_pickup",
+            "geopoint_dropoff": "geopoint_dropoff",
+            "distance": "distance",
+            "cluster_labels": "cluster_labels"
+          }
+        }
+      ],
       "healthCheckQueries": [],
       "returnPostEnrichData": false,
       "auditPostEnrichData": false,
