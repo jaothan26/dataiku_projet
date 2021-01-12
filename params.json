@@ -10,6 +10,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "train_filtered_K_means",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -187,11 +196,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "d44479"
     },
-    "lastModifiedOn": 1610471201351
+    "lastModifiedOn": 1610471281030
   },
   "creationTag": {
     "versionNumber": 0,
