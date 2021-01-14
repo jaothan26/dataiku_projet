@@ -16,7 +16,7 @@
     "main": {
       "items": [
         {
-          "ref": "train_filtered_k_means_validation",
+          "ref": "train_filtered_k_means_validation_2",
           "deps": []
         }
       ]
@@ -34,7 +34,7 @@
     "main": {
       "items": [
         {
-          "ref": "validatio_score",
+          "ref": "validatio_score_2",
           "appendMode": false
         }
       ]
@@ -42,18 +42,18 @@
     "metrics": {
       "items": [
         {
-          "ref": "output_metrics",
-          "appendMode": true
+          "ref": "output_metrics_2",
+          "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "d44479"
     },
-    "lastModifiedOn": 1610466299911
+    "lastModifiedOn": 1610617152305
   },
   "creationTag": {
     "versionNumber": 0,
