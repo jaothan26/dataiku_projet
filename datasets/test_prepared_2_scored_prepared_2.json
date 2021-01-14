@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "d44479"
     },
-    "lastModifiedOn": 1610617393051
+    "lastModifiedOn": 1610617394986
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,16 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "key",
+        "type": "string"
+      },
+      {
+        "name": "fare_amount",
+        "type": "double"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
