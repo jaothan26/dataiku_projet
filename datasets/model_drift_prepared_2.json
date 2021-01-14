@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "d44479"
     },
-    "lastModifiedOn": 1610617526067
+    "lastModifiedOn": 1610617531726
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,16 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "date",
+        "type": "date"
+      },
+      {
+        "name": "model_drift",
+        "type": "double"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
