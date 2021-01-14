@@ -41,37 +41,6 @@
       ],
       "enrichMapping": [
         {
-          "datasetRef": "train_filtered_K_means",
-          "packagingType": "REFERENCED",
-          "on": [
-            {
-              "resourceLookupCol": "fare_amount"
-            }
-          ],
-          "missingLookupKeyBehavior": "IGNORE",
-          "notFoundBehavior": "IGNORE",
-          "multiMatchBehavior": "KEEP_FIRST",
-          "columnsMapping": {
-            "key": "key",
-            "pickup_datetime": "pickup_datetime",
-            "pickup_datetime_format": "pickup_datetime_format",
-            "year": "year",
-            "month": "month",
-            "weekday": "weekday",
-            "pickup_longitude": "pickup_longitude",
-            "pickup_latitude": "pickup_latitude",
-            "dropoff_longitude": "dropoff_longitude",
-            "abs_diff_longitude": "abs_diff_longitude",
-            "dropoff_latitude": "dropoff_latitude",
-            "abs_diff_latitude": "abs_diff_latitude",
-            "passenger_count": "passenger_count",
-            "geopoint_pickup": "geopoint_pickup",
-            "geopoint_dropoff": "geopoint_dropoff",
-            "distance": "distance",
-            "cluster_labels": "cluster_labels"
-          }
-        },
-        {
           "datasetRef": "train_filtered_K_means_2",
           "packagingType": "REFERENCED",
           "on": [
