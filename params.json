@@ -140,7 +140,6 @@
     }
   },
   "name": "ny_1",
-  "projectStatus": "Sandbox",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -196,11 +195,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "d44479"
     },
-    "lastModifiedOn": 1610472408687
+    "lastModifiedOn": 1610615459973
   },
   "creationTag": {
     "versionNumber": 0,
@@ -210,7 +209,9 @@
     "lastModifiedOn": 1610442894372
   },
   "shortDesc": "The project *ny_1* was created by Jonathan GOCKEL on Jan 12th 2021",
-  "tags": [],
+  "tags": [
+    "duplicated"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": [
