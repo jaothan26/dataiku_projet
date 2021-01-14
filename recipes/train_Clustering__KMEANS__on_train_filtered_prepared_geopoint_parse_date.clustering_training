@@ -5,13 +5,13 @@
   "modeling": {
     "max_iterations": 0,
     "ts_kmeans_k": 0,
-    "coef0": 0.0,
+    "coef0": 0,
     "seed": 1337,
     "n_jobs": 2,
     "k": 5,
     "isolation_forest": {
       "max_samples": 0.5,
-      "max_features": 1.0,
+      "max_features": 1,
       "seed": 1337,
       "n_samples": 256,
       "max_depth": 15,
@@ -22,20 +22,20 @@
       "enabled": false,
       "contamination": 0.05
     },
-    "epsilon": 0.0,
-    "min_sample_ratio": 0.0,
+    "epsilon": 0,
+    "min_sample_ratio": 0,
     "metrics": {
       "customEvaluationMetricGIB": true,
       "evaluationMetric": "SILHOUETTE"
     },
-    "gamma": 0.0,
+    "gamma": 0,
     "custom_has_k": false,
     "algorithm": "KMEANS"
   },
   "generatingModelId": "A-NY_1-8t76j1X7-Mznrx4Fd-s1-pp1-m1",
   "preprocessing": {
     "reduce": {
-      "kept_variance": 0.0,
+      "kept_variance": 0,
       "enabled": false
     },
     "per_feature": {
@@ -45,7 +45,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "customProcessorWantsMatrix": false,
@@ -58,7 +58,7 @@
           "recordedMeaning": "DoubleMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "pickup_longitude": {
         "rescaling": "AVGSTD",
@@ -66,7 +66,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "customProcessorWantsMatrix": false,
@@ -79,7 +79,7 @@
           "recordedMeaning": "DoubleMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "distance": {
         "rescaling": "AVGSTD",
@@ -87,7 +87,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "customProcessorWantsMatrix": false,
@@ -100,7 +100,7 @@
           "recordedMeaning": "DoubleMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "year": {
         "rescaling": "AVGSTD",
@@ -108,7 +108,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "customProcessorWantsMatrix": false,
@@ -121,7 +121,7 @@
           "recordedMeaning": "LongMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "weekday": {
         "rescaling": "AVGSTD",
@@ -129,7 +129,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "customProcessorWantsMatrix": false,
@@ -142,7 +142,7 @@
           "recordedMeaning": "LongMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "abs_diff_latitude": {
         "rescaling": "AVGSTD",
@@ -150,7 +150,7 @@
         "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "customProcessorWantsMatrix": false,
@@ -163,7 +163,7 @@
           "recordedMeaning": "DoubleMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "pickup_datetime": {
         "nb_bins_hashing": 1048576,
@@ -194,7 +194,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "customProcessorWantsMatrix": false,
@@ -207,7 +207,7 @@
           "recordedMeaning": "LongMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "dropoff_latitude": {
         "rescaling": "AVGSTD",
@@ -215,7 +215,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "customProcessorWantsMatrix": false,
@@ -228,7 +228,7 @@
           "recordedMeaning": "DoubleMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "pickup_datetime_format": {
         "rescaling": "AVGSTD",
@@ -236,7 +236,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "customProcessorWantsMatrix": false,
@@ -249,7 +249,7 @@
           "recordedMeaning": "Date",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "dropoff_longitude": {
         "rescaling": "AVGSTD",
@@ -257,7 +257,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "customProcessorWantsMatrix": false,
@@ -270,7 +270,7 @@
           "recordedMeaning": "DoubleMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "geopoint_pickup": {
         "nb_bins_hashing": 1048576,
@@ -301,7 +301,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "customProcessorWantsMatrix": false,
@@ -314,7 +314,7 @@
           "recordedMeaning": "LongMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "pickup_latitude": {
         "rescaling": "AVGSTD",
@@ -322,7 +322,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "customProcessorWantsMatrix": false,
@@ -335,7 +335,7 @@
           "recordedMeaning": "DoubleMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "abs_diff_longitude": {
         "rescaling": "AVGSTD",
@@ -343,7 +343,7 @@
         "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "customProcessorWantsMatrix": false,
@@ -356,7 +356,7 @@
           "recordedMeaning": "DoubleMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "geopoint_dropoff": {
         "nb_bins_hashing": 1048576,
@@ -428,7 +428,7 @@
         "behavior": "DISABLED"
       }
     },
-    "preprocessingFitSampleRatio": 1.0,
+    "preprocessingFitSampleRatio": 1,
     "preprocessingFitSampleSeed": 1337,
     "outliers": {
       "min_n": 100,
@@ -445,17 +445,17 @@
       },
       "method": "NONE",
       "correlation_params": {
-        "min_abs_correlation": 0.0,
-        "max_abs_correlation": 1.0,
+        "min_abs_correlation": 0,
+        "max_abs_correlation": 1,
         "n_features": 25
       },
       "lasso_params": {
         "alpha": [
           0.01,
           0.1,
-          1.0,
-          10.0,
-          100.0
+          1,
+          10,
+          100
         ],
         "cross_validate": true
       },
