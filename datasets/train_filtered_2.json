@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "d44479"
     },
-    "lastModifiedOn": 1610615795463
+    "lastModifiedOn": 1610615817278
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,40 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "key",
+        "type": "string"
+      },
+      {
+        "name": "fare_amount",
+        "type": "string"
+      },
+      {
+        "name": "pickup_datetime",
+        "type": "string"
+      },
+      {
+        "name": "pickup_longitude",
+        "type": "string"
+      },
+      {
+        "name": "pickup_latitude",
+        "type": "string"
+      },
+      {
+        "name": "dropoff_longitude",
+        "type": "string"
+      },
+      {
+        "name": "dropoff_latitude",
+        "type": "string"
+      },
+      {
+        "name": "passenger_count",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
