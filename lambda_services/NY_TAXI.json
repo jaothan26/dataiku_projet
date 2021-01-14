@@ -42,7 +42,7 @@
       "enrichMapping": [
         {
           "datasetRef": "train_filtered_K_means_2",
-          "packagingType": "REFERENCED",
+          "packagingType": "BUNDLED_TOCONNECTION",
           "on": [
             {
               "resourceLookupCol": "fare_amount"
