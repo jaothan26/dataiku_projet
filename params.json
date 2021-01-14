@@ -139,7 +139,7 @@
       }
     }
   },
-  "name": "ny_1",
+  "name": "Copy of ny_1",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -195,11 +195,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "d44479"
     },
-    "lastModifiedOn": 1610615459973
+    "lastModifiedOn": 1610615467114
   },
   "creationTag": {
     "versionNumber": 0,
@@ -208,7 +208,7 @@
     },
     "lastModifiedOn": 1610442894372
   },
-  "shortDesc": "The project *ny_1* was created by Jonathan GOCKEL on Jan 12th 2021",
+  "shortDesc": "The project *ny_1* was created by Jonathan GOCKEL on Jan 12th 2021\nThe project *COPYOFNY_1* was copied from *NY_1* by Jonathan GOCKEL on Jan 14th 2021",
   "tags": [
     "duplicated"
   ],
